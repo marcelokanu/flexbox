@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+li {
+
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: translateX(3px);
+}
 
 body {
   background: #e6ecf0;
@@ -65,6 +73,7 @@ header#main-header div.side {
 
 input, button {
   outline: 0;
+  cursor: pointer;
 }
 
 
@@ -101,6 +110,14 @@ header#main-header div.side button {
   color: #fff;
   border:0;
   border-radius: 16px;
+
+  transition: background-color 0.3s;
+}
+
+header#main-header div.side button:hover {
+  background: #fff;
+  color: #3bb9e3;
+  border: 1px solid #3bb9e3;
 }
 
 div.banner{
@@ -189,6 +206,14 @@ div.bar .content .actions button {
   border:1px solid #3bb9e3;
   border-radius: 16px;
   margin-right: 20px;
+
+  transition: background-color 0.3s;
+}
+
+div.bar .content .actions button:hover {
+  
+  background: #3bb9e3;
+  color: #fff;
 }
 
 div.wrapper-content {
@@ -237,6 +262,11 @@ div.wrapper-content aside.profile ul.listFollowers li {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  
+}
+
+div.wrapper-content aside.profile ul.listFollowers li:hover {
+  
 }
 
 /* Remove o margin do primeiro item da lista */
@@ -404,7 +434,7 @@ div.wrapper-content aside.widgets .title {
   /* Alinha todos os textos na mesma linha */
   align-items: baseline;
 }
-div.wrapper-content aside.widgets .title   strong {
+div.wrapper-content aside.widgets .title strong {
   font-size: 18px;
   color: #1f2226;
 } 
@@ -415,6 +445,7 @@ div.wrapper-content aside.widgets .title a {
   text-decoration: none;
   position: relative;
   padding-left: 10px;
+  transition: transform 0.2s;
 }
 
 div.wrapper-content aside.widgets .title a::before {
@@ -427,6 +458,10 @@ div.wrapper-content aside.widgets .title a::before {
   left: 4px;
   top: 6px;
 }
+div.wrapper-content aside.widgets .title a:hover {
+  transform: translateX(2px);
+}
+
 
 div.wrapper-content aside.widgets .follow {
   margin-bottom: 15px;
@@ -490,6 +525,12 @@ div.wrapper-content aside.widgets .follow ul li .profile .info button {
   border:1px solid #3bb9e3;
   border-radius: 16px;
 
+  transition: background-color 0.3s;
+}
+
+div.wrapper-content aside.widgets .follow ul li .profile .info button:hover {
+  background: #3bb9e3;
+  color: #fff;
 }
 
 /* Pega apenas o <a> apenas no primeiro nivel */
